@@ -1,0 +1,11 @@
+.headbarCategoryNames{
+    font-size: 1.3rem;
+    margin: 2vw;
+}
+
+.headbarCategories{
+    margin-bottom: 0.7vw;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}

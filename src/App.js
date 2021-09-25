@@ -1,24 +1,21 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Card from './components2/card';
+import Masonry from "masonry-layout";
+import HeadBar from "./HeaderComponents/headbar";
+import Navbar from "./HeaderComponents/navbar";
 
 function App() {
+  
+  console.log('Inside 1');
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    {/* <Navbar/> */}
+    
+    <HeadBar/>
+    <Card/> 
+   
+    </>
   );
 }
 

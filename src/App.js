@@ -1,20 +1,15 @@
-import React from 'react';
+import React,{useCallback} from 'react';
 import './App.css';
-import Card from './components2/card';
-import Masonry from "masonry-layout";
-import HeadBar from "./HeaderComponents/headbar";
-import Navbar from "./HeaderComponents/Navbar/navbar";
-import CategoriesBar from "./HeaderComponents/CategoriesBar/categoriesbar";
-
+import Card from './grid/card';
+import HeadBar from "./header/headbar";
+import Navbar from "./header/navbar";
+import {SliderData} from "./data/SliderData";
 function App() {
-  
-  console.log('Inside 1');
-  return (
+    return (
     <>
     <Navbar/>   
     <HeadBar/>
-    <CategoriesBar/>
-    <Card/> 
+    <Card sliderData={SliderData}/> 
     </>
   );
 }
